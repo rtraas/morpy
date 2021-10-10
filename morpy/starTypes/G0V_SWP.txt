@@ -1,0 +1,13 @@
+; SWP means this is from a stellar wind paper
+; Stellar Parameters  HD209458
+; G0V
+1.148		; Mass in solar masses
+1.14		; Radius in solar radii
+1.61		; Luminosity in solar luminosities
+.967		; Inner habital zone in AU (default)
+.047		; Planet orbit in AU
+
+; 14.9574325	; Planet radius in R_Earth
+; 202.605744	; Planet mass in M_Earth
+; 5000		; Stellar wind density (cm^-3)
+; 400		; Stellar wind velocity (400 km/s)

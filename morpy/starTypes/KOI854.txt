@@ -1,0 +1,12 @@
+; KOI 854.01 
+; M2V
+0.49		; Mass in solar masses
+0.52		; Radius in solar radii
+0.00885		; Luminosity in solar luminosities
+.235		; Planet orbit in AU
+.235		; Planet orbit in AU
+
+; 1.83		; Planet radius in R_Earth
+; 1.45		; Planet mass in M_Earth
+; 44, 3000		; Stellar wind densities (cm^-3)
+; 700, 300		; Stellar wind velocities (400 km/s)

@@ -1,0 +1,6 @@
+; Stellar Parameters for K0 Star
+0.78		; Mass in solar masses
+0.85		; Radius in solar radii
+0.40		; Luminosity in solar luminosities
+0.48		; Inner edge of HZ in AU
+0.83		; Middle of HZ in AU
