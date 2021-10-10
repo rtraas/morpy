@@ -1,0 +1,279 @@
+OUTPUT_FILES.txt
+
+DESCRIPTION
+    Simulation output files. Symlink this to all directories if not already done.
+    
+Author KCT
+Updated 12/12/2019
+
+m = mirror
+p = planet
+s = star
+
+Current package: eSims
+(Old runs may not have all of these files, additionally, what is output
+can be specified in the infile in the parameter plotTypes)
+
+.csv files (output in outputSim.py)
+torb.csv
+    - torbMirror:       Orbit time of the mirror in seconds (uses semimajor axis)
+accel.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - accelM:           Resultant acceleration on the mirror
+    - accelP:           Resultant acceleration on the planet
+    - accelS:           Resultant acceleration on the star
+    - accelMx           Components of acceleration on the mirror 
+      accelMy
+      accelMz
+    - accelPX           Components of acceleration on the planet 
+      accelPy
+      accelPz
+    - accelsX           Components of acceleration on the star 
+      accelSy
+      accelSz 
+coord.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - coordmX:-  coordmY:-  coordmZ: (x:- y:- z) coordinates of the mirror at a timestep
+    - coordpX:-  coordpY:-  coordpZ: (x:- y:- z) coordinates of the planet at a timestep
+    - coordsX:-  coordsY:-  coordsZ: (x:- y:- z) coordinates of the star at a timestep
+coordRRF.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - coordmRRFx:-  coordmRRFy:-  coordmRRFz:
+        (x:- y:- z) coordinates of the mirror in the rotating reference frame
+    - coordpRRFx:-  coordpRRFy:-  coordpRRFz:
+        (x:- y:- z) coordinates of the planet in the rotating reference frame
+    - coordsRRFx:-  coordsRRFy:-  coordsRRFz:
+        (x:- y:- z) coordinates of the star in the rotating reference frame
+distance.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - mirrorDistancePlanet - Distance of the mirror to the planet
+    - planetDistanceStar - Distance of the star to the planet
+dt.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - dt:               Current timestep of the program
+individualEnergies.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - mirrorKE:         Mirror's kinetic energy with the planet's included
+    - mirrorKEToP:      Mirror's kinetic energy without the planet's included
+    - planetKE:         Planet's kinetic energy
+    - planetMirrorGPE:  Gravitational potential energy between the mirror and planet
+    - starKE:           Star's kinetic energy
+    - starMirrorGPE:    Gravitational potential energy between the star and mirror
+    - starPlanetGPE:    Gravitational potential energy between the star and planet
+totalEnergy.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - mirrorEnergy:     Total mirror energy including the planet's
+    - mirrorEnergyToP:  Total mirror energy without the planet's
+    - planetEnergy:     Total planet energy
+    - starEnergy:       Total star energy
+    - totalEnergyREB:   Total energy calculated by rebound
+    - totalGPE:         Total graviational potential energy
+    - totalKE:          Total kinetic energy
+vel.csv
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - velM:             Resultant velocity on the mirror
+    - velP:             Resultant velocity on the planet
+    - velS:             Resultant velocity on the star 
+    - velMx             Components of velocity on the mirror 
+      velMy
+      velMz
+    - velPx             Components of velocity on the planet 
+      velPy
+      velPz
+    - velSx             Components of velocity on the star  
+      velSy
+      velSz
+    
+rp.csv  -   Made using avgRP.py found in ~/kpyreb and also at the top levels
+            of ~/kpyreb/Sims, ~/kpyreb/Sims/noRP, and ~/kpyreb/VariableRP
+    - Suggested Time:   Suggested Output Time
+    - True Time:        True Output Time
+    - rp:               Resultant RP accel on mirror
+    - rpx/rpy/rpz:      Components of RP accel on mirror
+
+PLOTS (made in plotSim.py)
+
+All plots use true time if plotting against time as of 7 June 2018. Previously
+used the suggested time step resulting in jitteriness of the forcetime plots.
+
+Force graphs show the magnitude of the force on the mirror.
+    forcetime.png
+        Force over time of the system
+    forcetimeComponents.png
+        Force over time of the system broken down into components.
+
+Mirror energy graphs show the amount of energy the mirror has (total energy).
+Helpful in seeing how additionalForces change how much energy the mirror has. 
+    mirrorEnergy.png
+        Total mirror energy over time
+    mirrorEnergyPercentChange.png
+        Total mirror energy percent change over time
+    mirrorEnergyToP
+        Total mirror energy relative to the planet's energy over time.
+        Helpful in seeing how much energy the mirror has without the energy of the
+        planet added in.
+
+Overview plots give a wide top view of the planet and mirror's positions 
+relative to the star. Helpful in seeing how far around the planet goes 
+around the star. The blue line overlays the mirror which is the orange line.    
+    overviewXY.png
+        Overview location plot in the XY plane
+    overviewXZ.png
+        Overview location plot in the XZ plane
+    overviewZY.png
+        Overview location plot in the ZY plane
+
+Planet Centered plots are used when the stationary plots get confusing. Mainly
+when the mirror does not orbit the planet in the XY plane. Okay to use for
+looking at things like thrust.
+    planetcenXY.png
+        Planet centered plot of the mirror and planet in the XY plane.
+        The would appear to orbit the planet in this perspective.
+    planetcenXZ.png
+        Planet centered plot of the mirror and planet in the XZ plane.
+        The would appear to orbit the planet in this perspective.
+    planetcenZY.png
+        Planet centered plot of the mirror and planet in the ZY plane.
+        The would appear to orbit the planet in this perspective.
+
+Stationary plots are mainly used to see how radiation pressure affects the mirror
+by keeping the star and planet still. This way RP always comes from the same
+direction/point.    
+    stationaryXY.png
+        Rotating reference frame (star and planet stay still) in the XY plane,
+        Star is always to the left.
+    stationaryXZ.png
+        Rotating reference frame (star and planet stay still) in the XZ plane
+        Star is always to the left.
+    stationaryZY.png
+        Rotating reference frame (star and planet stay still) in the ZY plane
+        Star is always to the left.
+
+Total energy plots are helpful in seeing if the system conserves energy when 
+it should.
+    totalEnergy.png
+        Total energy of the system over time
+    totalEnergyPercentChange.png
+        Total energy percent change of the system over time
+    totalEnergyPercentChangeREB.png
+        Total energy percent change of the system over time calculated by rebound
+    totalEnergyREB.png
+        Total energy of the system over time calculated by rebound
+        
+3D.png
+    Currently disabled. 3D plot of mirror about planet. In stationary rotating
+    reference frame.
+        
+Post sim plots can be made w/ SimTools in Packages.
+    mdistp.png
+        Mirror distance to the planet over time.
+    velmirror.png
+        Mirror resultant velocity relative to the planet over time.
+
+Order of headers as of 10/16/2019
+==> accel.csv <==
+Suggested Time
+True Time
+accelM
+accelMx
+accelMy
+accelMz
+accelP
+accelPx
+accelPy
+accelPz
+accelS
+accelSx
+accelSy
+accelSz
+
+==> coord.csv <==
+Suggested Time
+True Time
+coordmX
+coordmY
+coordmZ
+coordpX
+coordpY
+coordpZ
+coordsX
+coordsY
+coordsZ
+
+==> coordRRF.csv <==
+Suggested Time
+True Time
+coordmRRFx
+coordmRRFy
+coordmRRFz
+coordpRRFx
+coordpRRFy
+coordpRRFz
+coordsRRFx
+coordsRRFy
+coordsRRFz
+
+==> distance.csv <==
+Suggested Time
+True Time
+mirrorDistancePlanet
+planetDistanceStar
+
+==> dt.csv <==
+Suggested Time
+True Time
+dt
+
+==> individualEnergies.csv <==
+Suggested Time
+True Time
+mirrorKE
+mirrorKEToP
+planetKE
+planetMirrorGPE
+starKE
+starMirrorGPE
+starPlanetGPE
+
+==> rp.csv <==
+Suggested Time
+True Time
+rpx
+rpy
+rpz
+rp
+
+==> totalEnergy.csv <==
+Suggested Time
+True Time
+mirrorEnergy
+mirrorEnergyToP
+planetEnergy
+starEnergy
+totalEnergyREB
+totalGPE
+totalKE
+
+==> vel.csv <==
+Suggested Time
+True Time
+velM
+velMx
+velMy
+velMz
+velP
+velPx
+velPy
+velPz
+velS
+velSx
+velSy
+velSz
