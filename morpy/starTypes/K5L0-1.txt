@@ -1,6 +1,0 @@
-; Stellar Parameters for FAKE (Changed Luminosity) K5 Star
-0.69		; Mass in solar masses
-0.74		; Radius in solar radii
-0.10		; Luminosity in solar luminosities
-0.32		; Inner edge of HZ in AU
-0.55		; Middle of HZ in AU

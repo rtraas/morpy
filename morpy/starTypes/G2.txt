@@ -1,6 +1,0 @@
-; Stellar Parameters for G2 Star
-1.00		; Mass in solar masses
-1.00		; Radius in solar radii
-1.00		; Luminosity in solar luminosities
-0.75		; Inner edge of HZ in AU
-1.26		; Middle of HZ in AU
