@@ -1,0 +1,6 @@
+; Stellar Parameters for M8 Star
+0.10		; Mass in solar masses
+0.13		; Radius in solar radii
+0.0008		; Luminosity in solar luminosities
+0.023		; Inner edge of HZ in AU
+0.043		; Middle of HZ in AU

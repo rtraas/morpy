@@ -1,0 +1,6 @@
+; Stellar Parameters for M0 Star
+0.47		; Mass in solar masses
+0.63		; Radius in solar radii
+0.063		; Luminosity in solar luminosities
+0.20		; Inner edge of HZ in AU
+0.36		; Middle of HZ in AU
