@@ -1,6 +1,0 @@
-; Stellar Parameters for M5 Star
-0.21		; Mass in solar masses
-0.32		; Radius in solar radii
-0.0079		; Luminosity in solar luminosities
-0.073		; Inner edge of HZ in AU
-0.13		; Middle of HZ in AU

@@ -1,6 +1,0 @@
-; Stellar Parameters for G0 Star
-1.10		; Mass in solar masses
-1.05		; Radius in solar radii
-1.26		; Luminosity in solar luminosities
-0.84		; Inner edge of HZ in AU
-1.40		; Middle of HZ in AU
