@@ -1,0 +1,6 @@
+; Stellar Parameters for G5 Star
+0.93		; Mass in solar masses
+0.93		; Radius in solar radii
+0.79		; Luminosity in solar luminosities
+0.67		; Inner edge of HZ in AU
+1.13		; Middle of HZ in AU
