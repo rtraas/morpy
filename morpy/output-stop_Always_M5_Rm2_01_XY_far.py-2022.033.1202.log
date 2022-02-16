@@ -1,0 +1,112 @@
+
+
+Current Time:  2022-02-02 12:02:11.168796
+Reading Inputs from file:  ../tests/Always/stop_Always_M5_Rm2_01_XY_far.py
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m<ipython-input-2-f507fab47ada>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0msim[0m [0;34m=[0m [0mrs[0m[0;34m.[0m[0mreadinfile[0m[0;34m([0m[0;34m'../tests/Always/stop_Always_M5_Rm2_01_XY_far.py'[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[0;32m/space/mirrors/orbits/kpyreb/Packages/SimArchive/eSims/readInSim.py[0m in [0;36mreadinfile[0;34m(infile)[0m
+[1;32m     43[0m [0;34m[0m[0m
+[1;32m     44[0m [0;32mdef[0m [0mreadinfile[0m[0;34m([0m[0minfile[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0;32m---> 45[0;31m     [0msim[0m [0;34m=[0m [0mdoSim[0m[0;34m([0m[0minfile[0m[0;34m,[0m[0mread_only[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m     46[0m     [0mprint[0m[0;34m([0m[0mtype[0m[0;34m([0m[0msim[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     47[0m     [0;32mreturn[0m [0msim[0m[0;34m[0m[0m
+
+[0;32m/space/mirrors/orbits/kpyreb/Packages/SimArchive/eSims/doSim.py[0m in [0;36mdoSim[0;34m(infile, read_only)[0m
+[1;32m     60[0m         [0;31m#print(f'{settingfile[1]} - {settingfile[0]}')[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     61[0m         [0msys[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0mappend[0m[0;34m([0m[0msettingfile[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0m
+[0;32m---> 62[0;31m         [0minmod[0m[0;34m=[0m[0mimportlib[0m[0;34m.[0m[0mimport_module[0m[0;34m([0m[0msettingfile[0m[0;34m[[0m[0;36m1[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m     63[0m         [0msys[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0mpop[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     64[0m     [0;31m#inmod = __import__(infile)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/anaconda3/lib/python3.6/importlib/__init__.py[0m in [0;36mimport_module[0;34m(name, package)[0m
+[1;32m    124[0m                 [0;32mbreak[0m[0;34m[0m[0m
+[1;32m    125[0m             [0mlevel[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0m
+[0;32m--> 126[0;31m     [0;32mreturn[0m [0m_bootstrap[0m[0;34m.[0m[0m_gcd_import[0m[0;34m([0m[0mname[0m[0;34m[[0m[0mlevel[0m[0;34m:[0m[0;34m][0m[0;34m,[0m [0mpackage[0m[0;34m,[0m [0mlevel[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m    127[0m [0;34m[0m[0m
+[1;32m    128[0m [0;34m[0m[0m
+
+[0;32m/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py[0m in [0;36m_gcd_import[0;34m(name, package, level)[0m
+
+[0;32m/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py[0m in [0;36m_find_and_load[0;34m(name, import_)[0m
+
+[0;32m/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py[0m in [0;36m_find_and_load_unlocked[0;34m(name, import_)[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'stop_Always_M5_Rm2_01_XY_far.py'; 'stop_Always_M5_Rm2_01_XY_far' is not a package
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-3-f1e192b277bc>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0msim[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'sim' is not defined
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-4-60b725f10c9c>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0ma[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'a' is not defined
+
+1
+
+
+
+
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-6-f1e192b277bc>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0msim[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'sim' is not defined
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-7-ba9e6f6d7b46>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0mtype[0m[0;34m([0m[0msim[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'sim' is not defined
+
+
+1
+
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Do you really want to exit ([y]/n)? 
+
+Do you really want to exit ([y]/n)? 
+
+Current Time:  2022-02-02 12:02:48.614996
+Reading Inputs from file:  ../tests/Always/stop_Always_M5_Rm2_01_XY_far.py
+Traceback (most recent call last):
+  File "readInSim.py", line 143, in <module>
+    readinfile(sys.argv[1])
+  File "readInSim.py", line 45, in readinfile
+    sim = doSim(infile,read_only=True)
+  File "/space/mirrors/orbits/kpyreb/Packages/SimArchive/eSims/doSim.py", line 62, in doSim
+    inmod=importlib.import_module(settingfile[1])
+  File "/usr/local/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 945, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stop_Always_M5_Rm2_01_XY_far.py'; 'stop_Always_M5_Rm2_01_XY_far' is not a package

@@ -1,0 +1,29 @@
+
+
+Current Time:  2022-02-02 12:31:30.792988
+Reading Inputs from file:  stop_Always_M5_Rm2_01_XY_far
+Traceback (most recent call last):
+  File "/space/mirrors/orbits/kpyreb/Packages/SimArchive/eSims/doSim.py", line 59, in doSim
+    inmod=importlib.import_module(settingfile[1])
+  File "/usr/local/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stop_Always_M5_Rm2_01_XY_far'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "readInSim.py", line 152, in <module>
+    readinfile(sys.argv[1])
+  File "readInSim.py", line 54, in readinfile
+    sim = doSim(infile,read_only=True)
+  File "/space/mirrors/orbits/kpyreb/Packages/SimArchive/eSims/doSim.py", line 62, in doSim
+    inmod = importlib.import_module(settingfile[1])
+  File "/usr/local/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stop_Always_M5_Rm2_01_XY_far'
