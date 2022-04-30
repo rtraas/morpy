@@ -1,0 +1,116 @@
+energiesVariables.txt
+22 May 2018
+Author KCT
+
+TODO For used, put the name of the file output sim puts it in
+
+Keeps track of what variables are created in energies.py and what they are used
+for. Using this to determine which variables can be deleted.
+
+Energy is output when the user specifies 'energy' in the plotTypes argument array.
+                            
+VAR     DESCRIPTION                 PURPOSE                 USED                DELETE?
+mDistP  Distance between mirror     Keep track of the       distanceDF.csv      No
+        and planet                  distance between the
+                                    mirror and planet.
+                                    Was used for debugging
+                                    to check GPE
+                                    
+mDistS  Distance between mirror     Keep track of the       Never output        No
+        and star                    distance between the
+                                    mirror and star.
+                                    Was used for debugging
+                                    to check GPE
+                                    
+pDistS  Distance between star       Keep track of the       distanceDF.csv      No
+        and planet                  distance between the
+                                    star and planet.
+                                    Was used for debugging
+                                    to check GPE
+------------------------------------------------------------------------------------  
+VAR         DESCRIPTION             PURPOSE                 USED                 DELETE?
+mirrorKE    Total mirror KE         Keeping track of mirror individualEnergiesDF No
+                                    KE energy for debugging     
+                                    
+mirrorKEToP Total mirror KE         Keeping track of mirror individualEnergiesDF No
+                                    KE energy for debugging  
+                                    
+planetKE    Total planet KE         Keeping track of planet individualEnergiesDF No
+                                    KE energy for debugging 
+                                     
+starKE      Total star KE           Keeping track of star   individualEnergiesDF No
+                                    KE energy for debugging  
+
+totalKE     Total system KE         Keep track of system    totalEnergyDF.csv    No
+                                    KE to see of energy
+                                    is conserved
+------------------------------------------------------------------------------------  
+VAR                DESCRIPTION      PURPOSE                 USED                DELETE?                                                                       
+planetMirrorGPE    Total planet-    GPE Keeping track of    individualEnergiesDF No
+                   mirror GPE       planet-mirror GPE energy  
+                                    for debugging 
+                                     
+starPlanetGPE      Total planet-    GPE Keeping track of    individualEnergiesDF No
+                   star GPE         planet-star GPE energy  
+                                    for debugging 
+                                    
+starMirrorGPE      Total mirror-    GPE Keeping track of    individualEnergiesDF No
+                   star GPE         mirror-star GPE energy  
+                                    for debugging 
+                                    
+totalGPE           Total system GPE Keep track of system    totalEnergyDF.csv    No
+                                    GPE to see of energy
+                                    is conserved
+------------------------------------------------------------------------------------  
+VAR                DESCRIPTION      PURPOSE                 USED                DELETE?                                                                       
+mirrorEnergy       Total mirror     Keep track of mirror    totalEnergyDF.csv    No
+                   energy           energy to see of energy
+                                    is conserved
+mirrorEnergyToP    Total mirror     Keep track of mirror    totalEnergyDF.csv    No
+                   energy relative  energy to see of energy
+                   to the planet    is conserved
+
+
+
+
+
+
+************* INTERNAL USE ONLY *************
+VAR     DESCRIPTION                 PURPOSE                 USED                DELETE?
+tT      Actual end time of sim      ???                     Never               Yes
+
+sT      Suggest end time of sim     ???                     Never               Yes
+------------------------------------------------------------------------------------  
+VAR     DESCRIPTION                 PURPOSE                 USED                DELETE?
+pX/Y/Z  Planet x,y,z coord          Calculating dist        energies.py         No
+                                        for GPE calcs   
+                                        
+mX/Y/Z  Mirror x,y,z coord          Calculating dist        energies.py         No
+                                        for GPE calcs          
+                                        
+sX/Y/Z  Star x,y,z coord            Calculating dist        energies.py         No
+                                        for GPE calcs           
+------------------------------------------------------------------------------------                                     
+VAR     DESCRIPTION                 PURPOSE                 USED                DELETE?
+pVX/Y/Z Planet x,y,z vel            Calculating resultant   energies.py         No
+                                        vel for KE calcs 
+                                        
+mVX/Y/Z Mirror x,y,z vel            Calculating resultant   energies.py         No
+                                        vel for KE calcs         
+                                        
+sVX/Y/Z Star x,y,z vel              Calculating resultant   energies.py         No
+                                        vel for KE calcs 
+------------------------------------------------------------------------------------                                    
+VAR     DESCRIPTION                 PURPOSE                 USED                DELETE?
+velP    Resultant planet vel        Calc planet KE and      energies.py         No
+                                        total KE of system
+                                        
+velM    Resultant mirror vel        Calc mirror KE and      energies.py         No
+                                        total KE of system
+                        
+velMToP Resultant mirror to planet  Calc mirror KE rel to   energies.py         No
+        vel                             the planet's motion
+                                        
+velS    Resultant star vel          Calc star KE and        energies.py         No
+                                        total KE of system
+
